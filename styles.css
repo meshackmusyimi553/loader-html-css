@@ -1,0 +1,124 @@
+/* Base styles for the skeleton loader */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.skeleton-loader {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #f0f0f0;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-header,
+.skeleton-image,
+.skeleton-text,
+.skeleton-button {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+
+.skeleton-header {
+    height: 20px;
+    width: 60%;
+    margin-bottom: 16px;
+}
+
+.skeleton-image {
+    height: 180px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.skeleton-text {
+    height: 16px;
+    width: 80%;
+    margin-bottom: 8px;
+}
+
+.skeleton-button {
+    height: 36px;
+    width: 30%;
+    margin-top: 16px;
+}
+
+/* Animation for the skeleton loader */
+@keyframes pulse {
+    0% {
+        background-color: #e0e0e0;
+    }
+    50% {
+        background-color: #f0f0f0;
+    }
+    100% {
+        background-color: #e0e0e0;
+    }
+}
+
+/* Media queries for responsiveness */
+
+/* Mobile Phones: Up to 767px */
+@media (max-width: 767px) {
+    .skeleton-loader {
+        padding: 8px;
+    }
+    .skeleton-header {
+        width: 80%;
+    }
+    .skeleton-text {
+        width: 100%;
+    }
+    .skeleton-button {
+        width: 50%;
+    }
+}
+
+/* Tablets: 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .skeleton-loader {
+        padding: 16px;
+    }
+    .skeleton-header {
+        width: 70%;
+    }
+    .skeleton-text {
+        width: 90%;
+    }
+    .skeleton-button {
+        width: 40%;
+    }
+}
+
+/* Desktops: 1024px to 1919px */
+@media (min-width: 1024px) and (max-width: 1919px) {
+    .skeleton-loader {
+        padding: 24px;
+    }
+    .skeleton-header {
+        width: 60%;
+    }
+    .skeleton-text {
+        width: 80%;
+    }
+    .skeleton-button {
+        width: 30%;
+    }
+}
+
+/* Televisions: 1920px and above */
+@media (min-width: 1920px) {
+    .skeleton-loader {
+        padding: 32px;
+    }
+    .skeleton-header {
+        width: 50%;
+    }
+    .skeleton-text {
+        width: 70%;
+    }
+    .skeleton-button {
+        width: 25%;
+    }
+}
